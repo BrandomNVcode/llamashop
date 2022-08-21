@@ -15,7 +15,7 @@ export const Slider = () => {
                 <a href='#' className='shop-now'>Comprar ahora</a>
               </div>
               <div className='img-content'>
-                <img src="images/woman.png" alt="" className='img-model-left'/>
+                <img src="images/man2.png" alt="" className='img-model-left'/>
               </div>
           </div>
           <div className='container-slider'>
@@ -25,7 +25,7 @@ export const Slider = () => {
                   <p>Tanto para niñas, jovenes y adultos</p>
                   <a href='#' className='shop-now'>Comprar ahora</a>
               </div>
-              <img src="images/man.png" alt="" className='img-model-right'/>
+              <img src="images/woman2.png" alt="" className='img-model-right'/>
           </div>
           <div className='container-slider'>
               <div className='publicidad-content publicidad-content-left'>
@@ -35,7 +35,7 @@ export const Slider = () => {
                 <a href='#' className='shop-now'>Comprar ahora</a>
               </div>
               <div className='img-content'>
-                <img src="images/model.png" alt="" className='img-model-left'/>
+                <img src="images/model2.png" alt="" className='img-model-left'/>
               </div>
           </div>
       </Carousel>
