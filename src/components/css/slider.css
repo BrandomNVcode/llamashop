@@ -1,0 +1,25 @@
+
+
+
+.container-slider {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: calc(100vh - 90px); /*restamos el navbar (60px) y anuncio (30px)*/
+    background-color: #fff;
+}
+
+
+.publicidad {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-model {
+    width: 45%;
+}
+
+
+

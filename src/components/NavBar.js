@@ -8,7 +8,7 @@ import { Badge } from '@mui/material';
 
 export const NavBar = () => {
   return (
-    <nav className="container">
+    <nav className="container-navbar">
         <div className="wrapper">
             <div className="left">
                 <span className="lan">ES</span>
@@ -25,7 +25,7 @@ export const NavBar = () => {
                 <div className="menu-items">Login</div>
                 <div className="menu-items">
                     <Badge badgeContent={4} color="primary">
-                        <ShoppingCartOutlinedIcon />
+                        <ShoppingCartOutlinedIcon className='shop-cart'/>
                     </Badge>
                 </div>
             </div>

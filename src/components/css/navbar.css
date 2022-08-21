@@ -1,5 +1,5 @@
 
-.container {
+.container-navbar {
     height: 60px;
 }
 
@@ -35,10 +35,17 @@
 .search-input {
     border: none;
 }
+.search-input:focus {
+    outline: none;
+}
 
 .search-icon {
     font-size: 16px;
     color: #808080;
+}
+
+.shop-cart {
+    font-size: 1.7rem !important;
 }
 
 
