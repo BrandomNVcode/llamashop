@@ -1,6 +1,6 @@
 
 .container-navbar {
-    height: 60px;
+    height: 50px;
 }
 
 .wrapper {
@@ -22,18 +22,20 @@
 .lan {
     font-size: 14px;
     cursor: pointer;
+    display: none;
 }
 
 .search-contain {
     border: 1px solid #d3d3d3;
     display: flex;
     align-items: center;
-    margin-left: 25px;
-    padding: 5px;
+    padding: 3px;
+    margin-right: 10px;
 }
 
 .search-input {
     border: none;
+    width: 90px;
 }
 .search-input:focus {
     outline: none;
@@ -43,11 +45,6 @@
     font-size: 16px;
     color: #808080;
 }
-
-.shop-cart {
-    font-size: 1.7rem !important;
-}
-
 
 
 /*
@@ -60,6 +57,7 @@
 
 .logo {
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 
@@ -75,9 +73,63 @@
 }
 
 .menu-items {
-    font-size: 14px;
+    font-size: 0.9rem;
     cursor: pointer;
-    margin-left: 25px;
+    margin-left: 10px;
+}
+
+.shop-cart {
+    font-size: 1.7rem !important;
+}
+
+
+/*
+*
+* SMALL (>= 576 & < 768 px)
+*
+*/
+@media (min-width: 576px) {
+    .container-navbar {
+        height: 60px;
+    }
+
+    .lan {
+        display: block;
+    }
+
+    .search-contain {
+        padding: 6px;
+        margin-left: 10px;
+    }
+
+    .search-input {
+        width: auto;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .menu-items {
+        font-size: 1rem;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+}
+
+
+/*
+*
+* MEDIUM (>= 768 & < 992 px)
+*
+*/
+@media (min-width: 768px) {
+    .logo {
+        font-size: 2.2rem;
+    }
+    .menu-items {
+        font-size: 1.5rem;
+    }
 }
 
 

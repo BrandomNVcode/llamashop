@@ -9,33 +9,39 @@ export const Slider = () => {
       <Carousel wrapAround={true} slidesToShow={1} autoplay={true} autoplayInterval={3000}>
           <div className='container-slider'>
               <div className='publicidad-content publicidad-content-left'>
-                <h2>Ropa para hombres</h2>
-                <br/>
-                <p>Tanto para niños, jovenes y adultos</p>
-                <a href='#' className='shop-now'>Comprar ahora</a>
+                <div>
+                  <h2>Ropa para hombres</h2>
+                  <br/>
+                  <p>Tanto para niños, jovenes y adultos</p>
+                  <a href='#' className='shop-now'>Comprar ahora</a>
+                </div>
               </div>
               <div className='img-content'>
-                <img src="images/man2.png" alt="" className='img-model-left'/>
+                <img src="images/man2.png" alt="" className='img-model-left img-model'/>
               </div>
           </div>
           <div className='container-slider'>
               <div className='publicidad-content publicidad-content-right'>
+                <div>
                   <h2>Ropa para mujeres</h2>
                   <br/>
                   <p>Tanto para niñas, jovenes y adultos</p>
                   <a href='#' className='shop-now'>Comprar ahora</a>
+                </div>
               </div>
-              <img src="images/woman2.png" alt="" className='img-model-right'/>
+              <img src="images/woman2.png" alt="" className='img-model-right img-model'/>
           </div>
           <div className='container-slider'>
               <div className='publicidad-content publicidad-content-left'>
-                <h2>Ropa para los más jovenes</h2>
-                <br/>
-                <p>Ofertas especiales para niños y niñas</p>
-                <a href='#' className='shop-now'>Comprar ahora</a>
+                <div>
+                  <h2>Ropa para los más jovenes</h2>
+                  <br/>
+                  <p>Ofertas especiales para niños y niñas</p>
+                  <a href='#' className='shop-now'>Comprar ahora</a>
+                </div>
               </div>
               <div className='img-content'>
-                <img src="images/model2.png" alt="" className='img-model-left'/>
+                <img src="images/model2.png" alt="" className='img-model-left img-model'/>
               </div>
           </div>
       </Carousel>

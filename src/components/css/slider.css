@@ -1,26 +1,66 @@
 
 .container-slider {
     width: 100vw;
-    height: calc(100vh - 90px); /*restamos el navbar (60px) y anuncio (30px)*/
+    height: calc(100vh - 80px); /*restamos el navbar (50px) y anuncio (30px)*/
     background-color: #CCFFFF;
     position: relative;
 }
+
+.publicidad-content-left {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+    z-index: 1;
+}
+
+.publicidad-content-right {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+    z-index: 1;
+}
+
+.img-model-left {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 0;
+}
+
+.img-model-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.img-model {
+    max-height: 520px;
+    width: auto;
+}
+
+
 
 .publicidad-content {
     text-align: center;
 }
 
 .publicidad-content h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
 .publicidad-content p {
-    font-size: 1.8rem;
-    margin-bottom: 60px;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
 }
 
 .shop-now {
+    width: 150px;
     text-decoration: none;
     color: #000;
     background-color: #fff;
@@ -32,37 +72,71 @@
     box-shadow: #000 0 1px 2px 1px;
 }
 
-.publicidad-content-left {
-    position: absolute;
-    right: 20%;
-    top: 35%;
-    z-index: 1;
+
+
+/*
+*
+* SMALL (>= 576 & < 768 px)
+*
+*/
+@media (min-width: 576px) {
+    .publicidad-content-left {
+        top: 110px;
+    }
+    
+    .publicidad-content-right {
+        top: 110px;
+    }
+
+    .publicidad-content h2 {
+        font-size: 2.8rem;
+    }
+    
+    .publicidad-content p {
+        font-size: 1.3rem;
+    }
+
+    .img-model {
+        max-height: 550px;
+    }
 }
 
-.publicidad-content-right {
-    position: absolute;
-    left: 20%;
-    top: 35%;
-    z-index: 1;
-}
 
-.img-model-left {
-    max-height: 800px;
-    width: auto;
-    position: absolute;
-    left: 150px;
-    bottom: 0;
-    z-index: 0;
-}
 
-.img-model-right {
-    max-height: 800px;
-    width: auto;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-}
+/*
+*
+* MEDIUM (>= 768 & < 992 px)
+*
+*/
+@media (min-width: 768px) {
+    .publicidad-content-left {
+        left: 30%;
+        top: 25%;
+    }
+    
+    .publicidad-content-right {
+        right: 30%;
+        top: 25%;
+    }
 
+    .publicidad-content h2 {
+        font-size: 3rem;
+        margin-bottom: 8px;
+    }
+    
+    .publicidad-content p {
+        font-size: 1.4rem;
+        margin-bottom: 80px;
+    }
+
+    .img-model-left {
+        right: 350px;
+    }
+
+
+    .img-model {
+        max-height: 600px;
+    }
+}
 
 
