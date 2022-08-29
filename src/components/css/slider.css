@@ -142,7 +142,7 @@
 
 
 /*HORIZONTAL*/
-@media (max-height: 575px) and (max-width: 576px) {
+@media (max-height: 575px) and (orientation: landscape) {
 
     .publicidad-content p {
         font-size: 1.2rem;
@@ -172,7 +172,7 @@
 
 
 
-@media (max-height: 475px) and (max-width: 576px) {
+@media (max-height: 475px) and (orientation: landscape) {
     .publicidad-content-left {
         top: 15%;
     }
@@ -186,7 +186,7 @@
 
 
 
-@media (max-height: 375px) and (max-width: 576px) {
+@media (max-height: 375px) and (orientation: landscape) {
     .img-model {
         height: 200px;
     }
