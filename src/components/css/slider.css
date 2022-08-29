@@ -166,7 +166,7 @@
         right: 65%;
     }
     .img-model {
-        height: 400px;
+        height: 450px;
     }
 }
 
@@ -180,7 +180,7 @@
         top: 15%;
     }
     .img-model {
-        height: 300px;
+        height: 350px;
     }
 }
 
@@ -188,7 +188,7 @@
 
 @media (max-height: 375px) and (orientation: landscape) {
     .img-model {
-        height: 200px;
+        height: 250px;
     }
 }
 
