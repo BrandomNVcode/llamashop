@@ -101,6 +101,56 @@
     }
 }
 
+/*-------------HORIZONTAL SMALL-------------*/
+@media (min-width: 576px) and ((max-height: 640px)) {
+    .publicidad-content-left {
+        left: 200px;
+        top: 40px;
+    }
+    .publicidad-content-right {
+        right: 100px;
+        top: 40px;
+    }
+
+    .publicidad-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .publicidad-content p {
+        font-size: 1rem;
+    }
+    .shop-now {
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+        padding: 5px 10px;
+    }
+
+    .img-model-left {
+        right: 300px;
+    }
+    .img-model {
+        max-height: 500px;
+    }
+}
+
+@media (min-width: 576px) and ((max-height: 550px)) {
+    .img-model {
+        max-height: 380px;
+    }
+}
+
+@media (min-width: 576px) and ((max-height: 440px)) {
+    .img-model {
+        max-height: 300px;
+    }
+}
+
+@media (min-width: 576px) and ((max-height: 320px)) {
+    .img-model {
+        max-height: 200px;
+    }
+}
+
 
 
 /*
