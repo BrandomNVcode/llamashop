@@ -27,7 +27,7 @@ export const NavBar = () => {
                 <div className="left">
                     <span className="lan">ES</span>
                     <div className="search-contain">
-                        <input className="search-input"/>
+                        <input className="search-input" placeholder='Buscar..'/>
                         <SearchIcon  className="search-icon"/>
                     </div>
                 </div>

@@ -11,7 +11,6 @@ export const Slider = () => {
               <div className='publicidad-content publicidad-content-left'>
                 <div>
                   <h2>Ropa para hombres</h2>
-                  <br/>
                   <p>Tanto para niños, jovenes y adultos</p>
                   <a href='#' className='shop-now'>Comprar ahora</a>
                 </div>
@@ -24,7 +23,6 @@ export const Slider = () => {
               <div className='publicidad-content publicidad-content-right'>
                 <div>
                   <h2>Ropa para mujeres</h2>
-                  <br/>
                   <p>Tanto para niñas, jovenes y adultos</p>
                   <a href='#' className='shop-now'>Comprar ahora</a>
                 </div>
@@ -35,7 +33,6 @@ export const Slider = () => {
               <div className='publicidad-content publicidad-content-left'>
                 <div>
                   <h2>Ropa para los más jovenes</h2>
-                  <br/>
                   <p>Ofertas especiales para niños y niñas</p>
                   <a href='#' className='shop-now'>Comprar ahora</a>
                 </div>

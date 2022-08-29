@@ -10,7 +10,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 80px;
+    top: 35px;
     z-index: 1;
 }
 
@@ -18,7 +18,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 80px;
+    top: 35px;
     z-index: 1;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .img-model {
-    max-height: 520px;
+    max-height: 350px;
     width: auto;
 }
 
@@ -50,21 +50,21 @@
 }
 
 .publicidad-content h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 400;
 }
 
 .publicidad-content p {
-    font-size: 1.4rem;
-    margin-bottom: 40px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .shop-now {
-    width: 150px;
+    width: 120px;
     text-decoration: none;
     color: #000;
     background-color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 3px;
     padding: 10px 15px;
@@ -141,10 +141,8 @@
 
 
 /*HORIZONTAL*/
-@media (max-height: 675px) {
-    .img-model {
-        height: 500px;
-    }
+@media (max-height: 575px) {
+
     .publicidad-content p {
         font-size: 1.2rem;
         margin-bottom: 20px;
@@ -162,11 +160,7 @@
         font-size: 1rem;
         margin-bottom: 20px;
     }
-}
 
-
-
-@media (max-height: 575px) {
     .img-model-left {
         right: 65%;
     }
@@ -196,8 +190,5 @@
         height: 200px;
     }
 }
-
-
-
 
 
