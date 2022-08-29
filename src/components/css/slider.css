@@ -141,7 +141,7 @@
 
 
 /*HORIZONTAL*/
-@media (max-height: 575px) {
+@media (max-height: 575px) and (max-width: 576px) {
 
     .publicidad-content p {
         font-size: 1.2rem;
@@ -171,7 +171,7 @@
 
 
 
-@media (max-height: 475px) {
+@media (max-height: 475px) and (max-width: 576px) {
     .publicidad-content-left {
         top: 15%;
     }
@@ -185,7 +185,7 @@
 
 
 
-@media (max-height: 375px) {
+@media (max-height: 375px) and (max-width: 576px) {
     .img-model {
         height: 200px;
     }
