@@ -120,13 +120,13 @@
     }
 
     .publicidad-content h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 8px;
     }
     
     .publicidad-content p {
-        font-size: 1.4rem;
-        margin-bottom: 80px;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
     }
 
     .img-model-left {
@@ -137,58 +137,128 @@
     }
 }
 
-
-
-
-/*HORIZONTAL*/
-/*@media (max-height: 575px) and (orientation: landscape) {
-
-    .publicidad-content p {
-        font-size: 1.2rem;
-        margin-bottom: 20px;
-    }
-    
-    .shop-now {
-        width: 100px;
-        font-size: 1rem;
-    }
-    .publicidad-content h2 {
-        font-size: 2rem;
-    }
-    
-    .publicidad-content p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-
-    .img-model-left {
-        right: 65%;
-    }
+/*-------------HORIZONTAL MEDIUM-------------*/
+@media (min-width: 768px) and ((max-height: 640px)) {
     .img-model {
-        height: 450px;
+        max-height: 500px;
+    }
+}
+
+@media (min-width: 768px) and ((max-height: 550px)) {
+    .img-model {
+        max-height: 380px;
+    }
+}
+
+@media (min-width: 768px) and ((max-height: 440px)) {
+    .img-model {
+        max-height: 300px;
     }
 }
 
 
 
-@media (max-height: 475px) and (orientation: landscape) {
+
+/*
+*
+* LARGE (>= 992 & < 1200 px)
+*
+*/
+@media (min-width: 992px) {
+    .publicidad-content-left {
+        top: 30%;
+    }
+    
+    .publicidad-content-right {
+        top: 30%;
+    }
+
+    .publicidad-content h2 {
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .publicidad-content p {
+        font-size: 1.5rem;
+    }
+}
+
+/*-----HORIZONTAL LARGE-----*/
+@media (min-width: 768px) and ((max-height: 440px)) {
     .publicidad-content-left {
         top: 15%;
     }
+    
     .publicidad-content-right {
         top: 15%;
     }
-    .img-model {
-        height: 350px;
-    }
 }
 
 
-
-@media (max-height: 375px) and (orientation: landscape) {
-    .img-model {
-        height: 250px;
-    }
-}
-
+/*
+*
+* EXTRA LARGE (>= 1200)
+*
 */
+@media (min-width: 1200px) {
+    .publicidad-content-left {
+        top: 35%;
+    }
+    
+    .publicidad-content-right {
+        top: 35%;
+    }
+
+    .publicidad-content h2 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .publicidad-content p {
+        font-size: 2rem;
+    }
+
+    .img-model-left {
+        right: 600px;
+    }
+    .img-model {
+        max-height: 700px;
+    }
+}
+
+
+/*-----HORIZONTAL EXTRA LARGE-----*/
+@media (min-width: 1200px) and ((max-height: 776px)) {
+    .publicidad-content-left {
+        top: 25%;
+    }
+    
+    .publicidad-content-right {
+        top: 25%;
+    }
+
+    .img-model {
+        max-height: 500px;
+    }
+}
+
+
+
+
+/*
+*
+* EXTRA EXTRA LARGE (>= 1400)
+*
+*/
+@media (min-width: 1400px) {
+
+    .img-model-left {
+        right: 700px;
+    }
+    .img-model {
+        max-height: 800px;
+    }
+}
+
+
+

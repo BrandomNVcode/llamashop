@@ -167,11 +167,22 @@
 *
 */
 @media (min-width: 768px) {
+
+    .menu-icon {
+        display: none;
+    }
+    .nav-list-items-desplegable {
+        display: none;
+    }
+    .nav-list-items {
+        display: flex;
+    }
+
     .logo {
         font-size: 2.2rem;
     }
     .menu-items {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
