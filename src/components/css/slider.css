@@ -74,7 +74,6 @@
 }
 
 
-
 /*
 *
 * SMALL (>= 576 & < 768 px)
@@ -82,11 +81,11 @@
 */
 @media (min-width: 576px) {
     .publicidad-content-left {
-        top: 110px;
+        top: 70px;
     }
     
     .publicidad-content-right {
-        top: 110px;
+        top: 70px;
     }
 
     .publicidad-content h2 {
@@ -131,7 +130,7 @@
     }
 
     .img-model-left {
-        right: 350px;
+        right: 400px;
     }
     .img-model {
         max-height: 600px;
@@ -142,7 +141,7 @@
 
 
 /*HORIZONTAL*/
-@media (max-height: 575px) and (orientation: landscape) {
+/*@media (max-height: 575px) and (orientation: landscape) {
 
     .publicidad-content p {
         font-size: 1.2rem;
@@ -192,4 +191,4 @@
     }
 }
 
-
+*/
