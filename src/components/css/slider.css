@@ -301,12 +301,27 @@
 *
 */
 @media (min-width: 1400px) {
+    .publicidad-content-left {
+        top: 30%;
+    }
+    
+    .publicidad-content-right {
+        top: 30%;
+    }
 
     .img-model-left {
         right: 700px;
     }
     .img-model {
         max-height: 800px;
+    }
+    .publicidad-content h2 {
+        font-size: 5rem;
+        margin-bottom: 30px;
+    }
+    
+    .publicidad-content p {
+        font-size: 2.5rem;
     }
 }
 
