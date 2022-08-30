@@ -2,8 +2,8 @@
 
 .categoties-content {
     display: flex;
-    padding: 20px;
-    justify-content: space-between;
+    padding: 10px 5px;
+    flex-wrap: wrap;
 }
 
 
