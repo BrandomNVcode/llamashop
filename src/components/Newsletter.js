@@ -8,9 +8,9 @@ import SendIcon from '@mui/icons-material/Send';
 export const Newsletter = () => {
   return (
     <div className='newsletter-container'>
-        <h1 className='newsletter-title'>Newsletter</h1>
+        <h1 className='newsletter-title'>Newsletter 2</h1>
         <div className='newsletter-description'>
-            Hola
+        Puedes consultar aquí - Hola
         </div>
         <div className='input-container-newsletter'>
             <input placeholder='Email..'/>
