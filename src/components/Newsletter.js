@@ -10,7 +10,7 @@ export const Newsletter = () => {
     <div className='newsletter-container'>
         <h1 className='newsletter-title'>Newsletter 2</h1>
         <div className='newsletter-description'>
-          Puedes consultar aquí
+            Puedes consultar aquí - Hola
         </div>
         <div className='input-container-newsletter'>
             <input placeholder='Email..'/>
