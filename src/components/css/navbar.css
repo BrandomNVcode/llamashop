@@ -12,11 +12,15 @@
 }
 
 .nav-list-click-0 {
-    display: none;
+    display: flex;
+    top: -50px;
+    opacity: 0;
 }
 
 .nav-list-click-1 {
     display: flex;
+    top: 50px;
+    opacity: 1;
 }
 
 .nav-list-items-desplegable {
@@ -28,8 +32,8 @@
     flex-direction: column;
     padding: 0;
     position: absolute;
-    top: 50px;
     z-index: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-list-items-desplegable li {
