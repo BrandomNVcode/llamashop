@@ -13,6 +13,7 @@
 
 
 .circle {
+    display: none;
     margin-top: 5px;
     width: 210px;
     height: 210px;
