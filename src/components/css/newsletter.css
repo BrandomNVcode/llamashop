@@ -38,10 +38,17 @@
 
 .input-newsletter {
     flex: 10;
+    font-size: 1.2rem;
+    color: #1c467c;
     padding-left: 20px;
     border-radius: 20px 0 0 20px;
     border: none;
 }
+
+.input-newsletter:focus {
+    outline: none;
+}
+
 
 .btn-newsletter {
     flex: 2;
@@ -69,4 +76,17 @@
 }
 
 
+
+@media (min-width: 768px) {
+    .input-container-newsletter {
+        width: 60%;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .input-container-newsletter {
+        width: 40%;
+    }
+}
 
