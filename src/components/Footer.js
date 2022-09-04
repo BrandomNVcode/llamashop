@@ -16,9 +16,9 @@ export const Footer = () => {
                     ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
-                <div className='social-media'>
+                <a href='https://github.com/BrandomNVcode/llamashop' rel="noreferrer" target="_blank" className='social-media'>
                     <GitHubIcon />
-                </div>
+                </a>
             </div>
             <div className='footer-container-center'>
                 <h3>Enlace útil</h3>
