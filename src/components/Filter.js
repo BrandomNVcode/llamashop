@@ -9,7 +9,7 @@ export const Filter = () => {
             <div className='filter'>
                 <span>Productos:</span>
                 <select className='select-product'>
-                    <option defaultChecked>Marca</option>
+                    <option defaultChecked>Todas las marcas</option>
                     <option>Adidas</option>
                     <option>Nike</option>
                     <option>Puma</option>
