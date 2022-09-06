@@ -11,8 +11,8 @@ import { Slider } from '../components/Slider';
 export const Home = () => {
   return (
     <div>
-        <Anuncio />
         <NavBar />
+        <Anuncio />
         <Slider />
         <Categories />
         <Products />

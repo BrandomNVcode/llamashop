@@ -1,0 +1,45 @@
+.list-cart-container {
+    margin: 25px 10px;
+}
+
+.list-cart-title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(87, 87, 87);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+
+.btn-shop-container {
+    display: flex;
+    justify-content: start;
+}
+
+.btn-shop-continue {
+    margin-left: 10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    border: solid 1px #303030;
+    background-color: #fff;
+}
+
+
+
+
+.list-product-order {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
