@@ -7,6 +7,7 @@ import { Register } from '../page/Register';
 import { PublicRouter } from './PublicRouter';
 import { PrivateRouter } from './PrivateRouter';
 import { ShoppingCart } from '../page/ShoppingCart';
+import { Product } from '../page/Product';
 
 
 
@@ -22,6 +23,7 @@ export const AppRouter = () => {
 
                 <Route path='/' element={<Home />} />
                 <Route path='/products' element={<ProductList />} />
+                <Route path='/product/:id' element={<Product />} />
 
 
                 <Route path='/auth/*'>
