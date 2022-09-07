@@ -8,11 +8,11 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 export const InfoProduct = () => {
 
 
-    const [cantidad, setCantidad] = useState(0);
+    const [cantidad, setCantidad] = useState(1);
 
     const handleClickMenos = () => {
         const newCantidad = cantidad - 1;
-        newCantidad < 0? setCantidad(0) : setCantidad(newCantidad);
+        newCantidad < 1? setCantidad(1) : setCantidad(newCantidad);
     }
 
     const handleClickMas = () => {
