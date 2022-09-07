@@ -31,20 +31,135 @@
     margin-left: 20px;
 }
 
-.product-order-caracter {
-    font-weight: bold;
+.product-order-caracter, .product-order-title {
+    margin-right: 5px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-content: center;
 }
 
+.product-order-caracter {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #00424b;
+}
+
+
+.product-order-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #3f7e76;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+.order-cantidad {
+    display: flex;
+    align-items: baseline;
+}
+
+.operador-order {
+    cursor: pointer;
+    font-weight: bold;
+    color: #eb9595;
+    margin: 0 5px;
+    padding: 1px 5px;
+    border: 1px solid #cca;
+    border-radius: 5px;
+}
+
+.num-order {
+    color: #000;
+    font-weight: 400;
+    margin: 0 2px;
+}
+
+
+
+
 .product-order-price {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #777777;
-    margin-right: 20px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
+
+
+
+/*---*/
+
+
+@media (min-width: 576px) {
+
+    .product-order-caracter {
+        font-size: 1.2rem;
+    }
+    
+    
+    .product-order-title {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    .product-order-price {
+        font-size: 1.5rem;
+        margin-right: 30px;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .product-order-content-img {
+        flex: 1;
+    }
+
+    .product-order-img {
+        width: 70%;
+    }
+    
+    .product-order-summary {
+        flex: 1;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-order-caracters {
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .product-order-price {
+        font-size: 1.7rem;
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+
+    .cart-total-price {
+        padding-right: 50px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .product-order-price {
+        font-size: 2.25rem;
+    }
+
+    .title-price {
+        font-size: 1.5rem;
+    }
+
+    .total-price {
+        font-size: 1.5rem;
+    }
+}
+
+
 
 

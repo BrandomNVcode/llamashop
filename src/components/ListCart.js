@@ -25,6 +25,10 @@ export const ListCart = () => {
                     <ProductOrder url={"https://clux.pe/wp-content/uploads/2021/10/1-22-600x600.jpg"}/>
                 </li>
             </ul>
+            <div className='cart-total-price'>
+                <span className='title-price'>Total:</span>
+                <span className='total-price'>S/. 1574</span>
+            </div>
         </div>
     )
 }
