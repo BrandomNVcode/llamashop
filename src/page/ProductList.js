@@ -12,8 +12,8 @@ import { Products } from '../components/Products';
 export const ProductList = () => {
     return (
         <>
-            <Anuncio />
             <NavBar />
+            <Anuncio />
             <h1 className='product-name-category'>Zapatillas</h1>
             <Filter />
             <Products />

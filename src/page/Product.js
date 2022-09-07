@@ -8,8 +8,8 @@ import { NavBar } from '../components/NavBar';
 export const Product = () => {
     return (
         <>
-            <Anuncio />
             <NavBar />
+            <Anuncio />
             <InfoProduct />
             <Footer />
         </>
