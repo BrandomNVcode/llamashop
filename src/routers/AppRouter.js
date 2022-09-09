@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from '../page/Home';
-import { Login } from '../page/Login';
+import { LoginScreen } from '../page/LoginScreen';
 import { ProductList } from '../page/ProductList';
 import { Register } from '../page/Register';
 import { PublicRouter } from './PublicRouter';
@@ -14,7 +14,7 @@ import { Product } from '../page/Product';
 export const AppRouter = () => {
 
 
-    const isAuth = true;
+    const isAuth = false;
 
 
     return (
@@ -30,7 +30,7 @@ export const AppRouter = () => {
 
                     <Route path='login' element={
                         <PublicRouter isAuth={isAuth}>
-                            <Login />
+                            <LoginScreen />
                         </PublicRouter>
                     } />
 
