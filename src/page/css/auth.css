@@ -1,6 +1,6 @@
 
 
-.login-screen-content {
+.auth-screen-content {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@
 
 
 @media (min-width: 576px) and ((max-height: 850px)) {
-    .login-screen-content {
+    .auth-screen-content {
         height: calc(100vh + 300px);
     }
 }
