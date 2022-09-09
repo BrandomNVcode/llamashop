@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from '../page/Home';
-import { LoginScreen } from '../page/LoginScreen';
-import { ProductList } from '../page/ProductList';
-import { Register } from '../page/Register';
+
 import { PublicRouter } from './PublicRouter';
 import { PrivateRouter } from './PrivateRouter';
+
+import { LoginScreen } from '../page/LoginScreen';
+import { ProductList } from '../page/ProductList';
+import { RegisterScreen } from '../page/RegisterScreen';
 import { ShoppingCart } from '../page/ShoppingCart';
 import { Product } from '../page/Product';
 
@@ -36,7 +38,7 @@ export const AppRouter = () => {
 
                     <Route path='register' element={
                         <PublicRouter isAuth={isAuth}>
-                            <Register />
+                            <RegisterScreen />
                         </PublicRouter>
                     } />
 

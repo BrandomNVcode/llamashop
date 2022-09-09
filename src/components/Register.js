@@ -2,13 +2,14 @@ import React from 'react';
 import "./css/auth.css";
 
 
-export const Login = () => {
+
+export const Register = () => {
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        alert("Login start..");
+        alert("Register start..");
     }
 
 
@@ -21,13 +22,20 @@ export const Login = () => {
             <div className='auth-form-content'>
                 <h1 className='title-llamashop'>LLAMAshop.</h1>
                 <form onSubmit={handleSubmit}>
+                    
+                    <label htmlFor="user">Nombre de Usuario</label>
+                    <input type="text" name="user" id="user" value="Usuario Demo" disabled className='input-box'/>
+
                     <label htmlFor="correo">Correo</label>
                     <input type="email" name="correo" id="correo" value="usuario@demo.com" disabled className='input-box'/>
 
                     <label htmlFor="contracenia">Contraceña</label>
-                    <input type="password" name="correo" id="contracenia" value="test123" disabled className='input-box'/>
+                    <input type="password" name="contracenia" id="contracenia" value="test123" disabled className='input-box'/>
 
-                    <input type="submit" value="INICIAR SESIÓN" className='btn-auth'/>
+                    <label htmlFor="confirmcontracenia">Confirmar Contraceña</label>
+                    <input type="password" name="confirmcontracenia" id="confirmcontracenia" value="test123" disabled className='input-box'/>
+
+                    <input type="submit" value="REGISTRARSE" className='btn-auth'/>
                 </form>
             </div>
         </div>
