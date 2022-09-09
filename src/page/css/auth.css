@@ -1,7 +1,6 @@
 
 
 .auth-screen-content {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,11 +9,21 @@
 }
 
 
+.screen-login, .screen-register {
+    height: 100vh;
+}
+
+
 
 @media (min-width: 576px) and ((max-height: 850px)) {
-    .auth-screen-content {
+    .screen-login {
         height: calc(100vh + 300px);
     }
+
+    .screen-register {
+        height: calc(100vh + 500px);
+    }
+
 }
 
 

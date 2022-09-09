@@ -5,7 +5,7 @@ import { Register } from '../components/Register';
 
 export const RegisterScreen = () => {
     return (
-        <div className='auth-screen-content'>
+        <div className='auth-screen-content screen-register'>
             <Register />
         </div>
     )
