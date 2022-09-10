@@ -7,7 +7,7 @@ import { Login } from '../components/Login';
 
 export const LoginScreen = () => {
     return (
-      <div className='login-screen-content screen-login'>
+      <div className='auth-screen-content screen-login'>
         <Login />
       </div>
     )

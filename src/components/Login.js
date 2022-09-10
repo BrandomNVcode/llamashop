@@ -1,14 +1,22 @@
 import React from 'react';
 import "./css/auth.css";
 
+import { useDispatch } from 'react-redux'
+import { Link } from "react-router-dom";
+
+import { startLogin } from '../redux/features/auth/authSlice';
+
+
 
 export const Login = () => {
+
+    const dispatch = useDispatch();
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        alert("Login start..");
+        dispatch(startLogin());
     }
 
 
@@ -30,6 +38,13 @@ export const Login = () => {
                     <input type="submit" value="INICIAR SESIÓN" className='btn-auth'/>
                 </form>
             </div>
+
+            <div className='sugestion-auth sugestion-login'>
+                <Link to="/auth/register">
+                    <span>Si no tienes una cuenta, puedes crearte una</span>
+                </Link>
+            </div>
+            
         </div>
     )
 }

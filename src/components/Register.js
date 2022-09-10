@@ -1,6 +1,8 @@
 import React from 'react';
 import "./css/auth.css";
 
+import { Link } from "react-router-dom";
+
 
 
 export const Register = () => {
@@ -37,6 +39,12 @@ export const Register = () => {
 
                     <input type="submit" value="REGISTRARSE" className='btn-auth'/>
                 </form>
+            </div>
+
+            <div className='sugestion-auth sugestion-register'>
+                <Link to="/auth/login">
+                    <span>Si ya tienes una cuenta, ir a iniciar sesión</span>
+                </Link>
             </div>
         </div>
     )
