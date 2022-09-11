@@ -9,7 +9,8 @@ import { getUserAuth } from './thunk';
 const initialState = {
   isAuth: false,
   loading: false,
-  user: null
+  user: null,
+  token: null
 }
 
 
@@ -18,16 +19,19 @@ export const counterSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
-    startLogin: (state) => {
-        state.loading = true;
-    },
     startLogout: (state) => {
         state.isAuth = false;
     }
   },
   extraReducers: (builder) => {
-    builder.addCase(getUserAuth.fulfilled, (state, action) => {
-        state.user = action.payload;
+    builder
+    .addCase(getUserAuth.pending, (state, action) => {
+      state.loading = true;
+      state.isAuth = false;
+    })
+    .addCase(getUserAuth.fulfilled, (state, action) => {
+        state.user = action.payload.user;
+        state.token = action.payload.token;
         state.loading = false;
         state.isAuth = true;
     })
@@ -37,7 +41,7 @@ export const counterSlice = createSlice({
 
 
 // Action creators are generated for each case reducer function
-export const { startLogin, startLogout } = counterSlice.actions
+export const { startLogout } = counterSlice.actions
 
 
 

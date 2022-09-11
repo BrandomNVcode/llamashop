@@ -10,8 +10,16 @@ export const getUserAuth = createAsyncThunk(
         const resp = await fetch('https://fakestoreapi.com/users/1');
         const user = await resp.json();
 
-        console.log(user);
-        return user;
+
+        const token = "token-demo-llamashop";
+        const uid = user.id;
+
+        localStorage.setItem('token', token);
+        localStorage.setItem('uid', uid);
+
+
+
+        return {user, token};
     }
 )
 
