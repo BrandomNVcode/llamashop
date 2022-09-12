@@ -22,13 +22,9 @@ export const AppRouter = () => {
 
     const dispatch = useDispatch();
 
-    const token = localStorage.getItem("token");
-
 
     useEffect(() => {
-      if(token) {
-          dispatch(getUserAuth());
-      }
+        dispatch(getUserAuth());
     }, []);
     
 

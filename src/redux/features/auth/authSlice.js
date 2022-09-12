@@ -30,8 +30,7 @@ export const counterSlice = createSlice({
       state.isAuth = false;
     })
     .addCase(getUserAuth.fulfilled, (state, action) => {
-        state.user = action.payload.user;
-        state.token = action.payload.token;
+        state.user = action.payload;
         state.loading = false;
         state.isAuth = true;
     })
