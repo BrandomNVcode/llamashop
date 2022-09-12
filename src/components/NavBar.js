@@ -1,13 +1,21 @@
 import React from 'react';
 import "./css/navbar.css";
 
+import { useSelector, useDispatch } from 'react-redux';
+
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Badge } from '@mui/material';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+import Avatar from '@mui/material/Avatar';
+import { startLogout } from '../redux/features/auth/authSlice';
 
 
 export const NavBar = () => {
+
+    const dispatch = useDispatch();
+
+    const { isAuth } = useSelector(state => state.auth);
 
 
     const handleMenuDrop = () => {
@@ -18,6 +26,11 @@ export const NavBar = () => {
         } else {
             claseCSS.classList.replace("nav-list-click-1", "nav-list-click-0");
         }
+    }
+
+
+    const handleLogout = () => {
+        dispatch(startLogout());
     }
 
 
@@ -35,26 +48,51 @@ export const NavBar = () => {
                     <h1 className="logo">LLAMAshop.</h1>
                 </div>
                 <div className="right">
-                    <div>
-                        <ul className='nav-list-items'>
-                            <li className="menu-items">Register</li>
-                            <li className="menu-items">Login</li>
-                        </ul>
-                    </div>
+
+                    {
+                        !isAuth &&
+                        <div>
+                            <ul className='nav-list-items'>
+                                <li className="menu-items">Register</li>
+                                <li className="menu-items">Login</li>
+                            </ul>
+                        </div>
+                    }
+
                     <div className="menu-items">
-                        <Badge badgeContent={4} color="primary">
+                        <Badge badgeContent={isAuth? 4 : 0} color="primary">
                             <ShoppingCartOutlinedIcon className='shop-cart'/>
                         </Badge>
                     </div>
-                    <div className='menu-icon' onClick={handleMenuDrop}>
-                        <MenuOutlinedIcon />
-                    </div>
+
+                    {
+                        isAuth &&
+                        <div className='auth-avatar'>
+                            <Avatar alt="Remy Sharp" src="https://mui.com/static/images/avatar/1.jpg" />
+
+                            <ul className='auth-desplegable'>
+                                <li className="menu-items" onClick={handleLogout}>Cerrar sesión</li>
+                            </ul>
+                        </div>
+                    }
+
+                    {
+                        !isAuth &&
+                        <div className='menu-icon' onClick={handleMenuDrop}>
+                            <MenuOutlinedIcon />
+                        </div>
+                    }
                 </div>
+
             </div>
-            <ul className='nav-list-items-desplegable nav-list-click-0' id="desplegable">
-                <li>Register</li>
-                <li>Login</li>
-            </ul>
+
+            {
+                !isAuth &&
+                <ul className="nav-list-items-desplegable nav-list-click-0" id="desplegable">
+                    <li>Register</li>
+                    <li>Login</li>
+                </ul>
+            }
         </nav>
     )
 }

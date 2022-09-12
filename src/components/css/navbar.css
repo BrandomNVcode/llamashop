@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-    padding: 10px 20px;
+    padding: 5px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +109,7 @@
 .menu-items {
     font-size: 0.9rem;
     cursor: pointer;
-    margin-left: 10px;
+    margin-top: 7px;
 }
 
 .shop-cart {
@@ -126,9 +126,41 @@
 }
 
 .nav-list-items {
+    margin-right: 10px;
     list-style: none;
     display: none;
     padding: 0;
+}
+
+.auth-avatar {
+    margin-left: 20px;
+    position: relative;
+}
+
+.auth-desplegable {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    padding: 0;
+    background-color: #f7e5e5;
+    border: 1px solid #e8ffd9;
+    position: absolute;
+    bottom: -43px;
+    right: 15px;
+    list-style: none;
+    z-index: 1;
+}
+
+.auth-desplegable li {
+    margin: 0;
+    color: #005431;
+}
+
+.auth-avatar:hover .auth-desplegable {
+    display: flex;
 }
 
 

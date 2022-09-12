@@ -20,7 +20,7 @@ export const counterSlice = createSlice({
   initialState,
   reducers: {
     startLogout: (state) => {
-        state.isAuth = false;
+        return initialState
     }
   },
   extraReducers: (builder) => {
