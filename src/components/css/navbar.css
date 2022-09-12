@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-    padding: 10px 20px;
+    padding: 7px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +109,10 @@
 .menu-items {
     font-size: 0.9rem;
     cursor: pointer;
-    margin-left: 10px;
+}
+
+.cart-svg {
+    margin-top: 7px;
 }
 
 .shop-cart {
@@ -117,6 +120,7 @@
 }
 
 .menu-icon {
+    display: flex;
     margin-left: 15px;
     cursor: pointer;
 }
@@ -126,9 +130,46 @@
 }
 
 .nav-list-items {
+    margin-right: 10px;
     list-style: none;
     display: none;
     padding: 0;
+}
+
+.auth-avatar {
+    margin-left: 20px;
+    position: relative;
+}
+
+.css-1wlk0hk-MuiAvatar-root {
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.auth-desplegable {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    padding: 0;
+    background-color: #f7e5e5;
+    border: 1px solid #e8ffd9;
+    position: absolute;
+    bottom: -43px;
+    right: 15px;
+    list-style: none;
+    z-index: 1;
+}
+
+.auth-desplegable li {
+    margin: 0;
+    color: #005431;
+}
+
+.auth-avatar:hover .auth-desplegable {
+    display: flex;
 }
 
 
@@ -163,6 +204,12 @@
         font-size: 1rem;
         margin-left: 0px;
         margin-right: 10px;
+    }
+
+    
+    .css-1wlk0hk-MuiAvatar-root {
+        width: 40px !important;
+        height: 40px !important;
     }
 }
 

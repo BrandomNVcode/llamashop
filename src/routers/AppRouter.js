@@ -1,4 +1,6 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from '../page/Home';
 
@@ -16,7 +18,7 @@ import { Product } from '../page/Product';
 export const AppRouter = () => {
 
 
-    const isAuth = false;
+    const { isAuth } = useSelector( state => state.auth );
 
 
     return (
