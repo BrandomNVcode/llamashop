@@ -9,8 +9,7 @@ import { getUserAuth } from './thunk';
 const initialState = {
   isAuth: false,
   loading: false,
-  user: null,
-  token: null
+  user: null
 }
 
 
@@ -20,7 +19,8 @@ export const counterSlice = createSlice({
   initialState,
   reducers: {
     startLogout: (state) => {
-        return initialState
+        state.isAuth = false;
+        state.user = null;
     }
   },
   extraReducers: (builder) => {

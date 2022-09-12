@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-    padding: 5px 20px;
+    padding: 7px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,6 +109,9 @@
 .menu-items {
     font-size: 0.9rem;
     cursor: pointer;
+}
+
+.cart-svg {
     margin-top: 7px;
 }
 
@@ -117,6 +120,7 @@
 }
 
 .menu-icon {
+    display: flex;
     margin-left: 15px;
     cursor: pointer;
 }
@@ -135,6 +139,11 @@
 .auth-avatar {
     margin-left: 20px;
     position: relative;
+}
+
+.css-1wlk0hk-MuiAvatar-root {
+    width: 35px !important;
+    height: 35px !important;
 }
 
 .auth-desplegable {
@@ -195,6 +204,12 @@
         font-size: 1rem;
         margin-left: 0px;
         margin-right: 10px;
+    }
+
+    
+    .css-1wlk0hk-MuiAvatar-root {
+        width: 40px !important;
+        height: 40px !important;
     }
 }
 

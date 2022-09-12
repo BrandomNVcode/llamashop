@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from '../page/Home';
@@ -13,20 +13,9 @@ import { RegisterScreen } from '../page/RegisterScreen';
 import { ShoppingCart } from '../page/ShoppingCart';
 import { Product } from '../page/Product';
 
-import { getUserAuth } from '../redux/features/auth/thunk';
-
 
 
 export const AppRouter = () => {
-
-
-    const dispatch = useDispatch();
-
-
-    useEffect(() => {
-        dispatch(getUserAuth());
-    }, []);
-    
 
 
     const { isAuth } = useSelector( state => state.auth );

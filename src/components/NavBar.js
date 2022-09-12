@@ -59,7 +59,7 @@ export const NavBar = () => {
                         </div>
                     }
 
-                    <div className="menu-items">
+                    <div className="menu-items cart-svg">
                         <Badge badgeContent={isAuth? 4 : 0} color="primary">
                             <ShoppingCartOutlinedIcon className='shop-cart'/>
                         </Badge>
