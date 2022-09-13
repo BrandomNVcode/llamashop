@@ -36,10 +36,12 @@
     transition: all 0.3s ease-in-out;
 }
 
-.nav-list-items-desplegable li {
+.nav-list-items-desplegable a {
+    text-decoration: none;
     font-size: 1rem;
     padding: 10px 0;
     color: #fff;
+    display: block;
 }
 
 
@@ -200,7 +202,10 @@
         font-size: 1.5rem;
     }
 
-    .menu-items {
+    .menu-items a {
+        display: flex;
+        text-decoration: none;
+        color: #000;
         font-size: 1rem;
         margin-left: 0px;
         margin-right: 10px;

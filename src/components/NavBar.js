@@ -3,6 +3,8 @@ import "./css/navbar.css";
 
 import { useSelector, useDispatch } from 'react-redux';
 
+import { Link } from "react-router-dom";
+
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Badge } from '@mui/material';
@@ -53,8 +55,12 @@ export const NavBar = () => {
                         !isAuth &&
                         <div>
                             <ul className='nav-list-items'>
-                                <li className="menu-items">Register</li>
-                                <li className="menu-items">Login</li>
+                                <li className="menu-items">
+                                    <Link to='/auth/login'>Login</Link>
+                                </li>
+                                <li className="menu-items">
+                                    <Link to='/auth/register'>Register</Link>
+                                </li>
                             </ul>
                         </div>
                     }
@@ -89,8 +95,12 @@ export const NavBar = () => {
             {
                 !isAuth &&
                 <ul className="nav-list-items-desplegable nav-list-click-0" id="desplegable">
-                    <li>Register</li>
-                    <li>Login</li>
+                    <li>
+                        <Link to='/auth/login'>Login</Link>
+                    </li>
+                    <li>
+                        <Link to='/auth/register'>Register</Link>
+                    </li>    
                 </ul>
             }
         </nav>
