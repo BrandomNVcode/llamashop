@@ -3,7 +3,7 @@ import "./css/navbar.css";
 
 import { useSelector, useDispatch } from 'react-redux';
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
@@ -14,6 +14,9 @@ import { startLogout } from '../redux/features/auth/authSlice';
 
 
 export const NavBar = () => {
+
+
+    const navigate = useNavigate();
 
     const dispatch = useDispatch();
 
@@ -33,6 +36,7 @@ export const NavBar = () => {
 
     const handleLogout = () => {
         dispatch(startLogout());
+        navigate("/");
     }
 
 
@@ -47,7 +51,7 @@ export const NavBar = () => {
                     </div>
                 </div>
                 <div className="center">
-                    <h1 className="logo">LLAMAshop.</h1>
+                    <h1 className="logo" onClick={() => navigate("/") }>LLAMAshop.</h1>
                 </div>
                 <div className="right">
 

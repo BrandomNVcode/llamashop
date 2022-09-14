@@ -5,7 +5,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 
 
-export const InfoProduct = () => {
+export const InfoProduct = ({product}) => {
 
 
     const [cantidad, setCantidad] = useState(1);
@@ -23,24 +23,16 @@ export const InfoProduct = () => {
     return (
         <div className='info-product-container'>
             <div className='product-info-img'>
-                <img src='https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png' />
+                <img src={product.image} alt='...'/>
             </div>
             <div className='info-product'>
-                <h2>Camisa de verano</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, 
-                    ultricies ligula a aliquam tellus ante dictum nulla, quisque 
-                    tincidunt habitasse etiam magna lacus. Cras odio quam habitant 
-                    aenean integer feugiat laoreet bibendum maecenas facilisis convallis, 
-                    ridiculus ultrices justo hendrerit suspendisse penatibus molestie quisque 
-                    nunc viverra, egestas praesent porttitor consequat mus nascetur volutpat rutrum 
-                    turpis pulvinar. Cras enim duis posuere ultrices quisque nostra curabitur 
-                    ultricies, nisi neque justo non diam nec habitant est porttitor, a phasellus 
-                    felis proin velit accumsan aliquam.</p>
+                <h2>{product.title}</h2>
+                <p>{product.description}</p>
 
-                <span className='precio'>Precio: 49 soles</span>
+                <span className='precio'>Precio: {product.price} soles c/u</span>
 
                 <div className='product-filter'>
-                    <div className='product-filter-select'>
+                    {/*<div className='product-filter-select'>
                         <span className='select-title'>Talla:</span>
                         <select>
                             <option selected>S</option>
@@ -49,7 +41,7 @@ export const InfoProduct = () => {
                             <option>X</option>
                             <option>XL</option>
                         </select>
-                    </div>
+                    </div>*/}
                     <div className='cantidad-producto'>
                         <span className='select-title'>Cantidad:</span>
                         <button onClick={handleClickMenos}>-</button>
