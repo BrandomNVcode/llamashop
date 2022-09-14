@@ -12,6 +12,10 @@ export const Product = ({product}) => {
     <div className='product-container'>
         <div className='circle'>
         </div>
+
+        <div className='product-price'>
+            <span>S/. {product.price}</span>
+        </div>
         <img className='img-product' src={product.image} alt='Product'/>
         <div className='product-info'>
             <div className='product-icon'>

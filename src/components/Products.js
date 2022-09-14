@@ -9,10 +9,10 @@ import { useSelector } from 'react-redux';
 
 export const Products = () => {
 
-  const { category } = useSelector(state => state.filter);
+  const { category, order } = useSelector(state => state.filter);
 
   const [products, setProducts] = useState([]);
-
+  const [defaultProduct, setDefaultProduct] = useState([]);
   
   
   useEffect(() => {
@@ -20,17 +20,48 @@ export const Products = () => {
     const listProducts = async() => {
       let arrProducts = await getProducts();
   
-      if(category !== "all") {
-        arrProducts = arrProducts.filter(product => product.category === category);
-      }
-  
       setProducts(arrProducts);
+      setDefaultProduct(arrProducts);
     };
     
     listProducts();
 
-  }, [category]);
+  }, []);
+
+  useEffect(() => {
+    let arrProducts = defaultProduct;
+
+    if(category !== "all") {
+      arrProducts = arrProducts.filter(product => product.category === category);
+    }
+
+    if(order !== "default") {
+      // ordern ascendente
+      arrProducts = arrProducts.sort((a, b) => {
+        if(a.price === b.price) {
+          return 0; 
+        }
+        if(a.price > b.price) {
+          return -1;
+        }
+        return 1;
+      })
+
+      if(order === "asc") {
+        setProducts(arrProducts);
+      } else {
+        setProducts(arrProducts.reverse());
+      }
+
+    } else {
+      setProducts(arrProducts);
+    }
+
+
+
+  }, [order, category, setProducts, defaultProduct])
   
+
 
   return (
     <div className='products-container'>

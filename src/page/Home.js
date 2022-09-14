@@ -8,13 +8,13 @@ import { Newsletter } from '../components/Newsletter';
 import { Products } from '../components/Products';
 import { Slider } from '../components/Slider';
 
-import { typeProduct } from '../redux/features/filter/filterSlice';
+import { categoryProduct } from '../redux/features/filter/filterSlice';
 
 
 export const Home = () => {
 
   const dispatch = useDispatch();
-  dispatch(typeProduct({category: "all", fromFilter: false}));
+  dispatch(categoryProduct({category: "all", fromFilter: false}));
 
   return (
     <div>
