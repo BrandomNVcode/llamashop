@@ -80,6 +80,11 @@
 *
 */
 @media (min-width: 576px) {
+
+    .container-slider {
+        height: calc(100vh - 90px); /*restamos el navbar (60px) y anuncio (30px)*/
+    }
+
     .publicidad-content-left {
         top: 70px;
     }

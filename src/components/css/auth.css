@@ -96,7 +96,7 @@ label {
 @media (min-width: 768px) {
 
     .auth-content {
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     .input-box, .btn-auth {
@@ -111,6 +111,8 @@ label {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .sugestion-login {

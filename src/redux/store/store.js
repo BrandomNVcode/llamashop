@@ -1,6 +1,7 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import authReducer from "../features/auth/authSlice";
 
+import authReducer from "../features/auth/authSlice";
+import filterReducer from "../features/filter/filterSlice";
 import listenerMiddleware from '../listener/listenerMiddleware';
 
 import {
@@ -17,7 +18,8 @@ import storage from 'redux-persist/lib/storage';
 
 
 const rootReducer = combineReducers({
-    auth: authReducer
+    auth: authReducer,
+    filter: filterReducer,
 });
 
 

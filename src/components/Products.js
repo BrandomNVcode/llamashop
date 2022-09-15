@@ -1,23 +1,75 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./css/products.css";
+
 import { Product } from './Product';
+import { getProducts } from '../helpers/products';
+import { useSelector } from 'react-redux';
 
 
 
 export const Products = () => {
+
+  const { category, order } = useSelector(state => state.filter);
+
+  const [products, setProducts] = useState([]);
+  const [defaultProduct, setDefaultProduct] = useState([]);
+  
+  
+  useEffect(() => {
+    
+    const listProducts = async() => {
+      let arrProducts = await getProducts();
+  
+      setProducts(arrProducts);
+      setDefaultProduct(arrProducts);
+    };
+    
+    listProducts();
+
+  }, []);
+
+  useEffect(() => {
+    let arrProducts = defaultProduct;
+
+    if(category !== "all") {
+      arrProducts = arrProducts.filter(product => product.category === category);
+    }
+
+    if(order !== "default") {
+      // ordern ascendente
+      arrProducts = arrProducts.sort((a, b) => {
+        if(a.price === b.price) {
+          return 0; 
+        }
+        if(a.price > b.price) {
+          return -1;
+        }
+        return 1;
+      })
+
+      if(order === "asc") {
+        setProducts(arrProducts);
+      } else {
+        setProducts(arrProducts.reverse());
+      }
+
+    } else {
+      setProducts(arrProducts);
+    }
+
+
+
+  }, [order, category, setProducts, defaultProduct])
+  
+
+
   return (
     <div className='products-container'>
-        <Product key={1}/>
-        <Product key={2}/>
-        <Product key={3}/>
-        <Product key={4}/>
-        <Product key={5}/>
-        <Product key={6}/>
-        <Product key={7}/>
-        <Product key={8}/>
-        <Product key={9}/>
-        <Product key={10}/>
-        <Product key={11}/>
+        {
+          products.map((product) => (
+            <Product key={product.id} product={product}/>
+          ))
+        }
     </div>
   )
 }

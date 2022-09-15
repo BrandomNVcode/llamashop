@@ -45,6 +45,9 @@ export const Register = () => {
                 <Link to="/auth/login">
                     <span>Si ya tienes una cuenta, ir a iniciar sesión</span>
                 </Link>
+                <Link to="/">
+                    <span>Vover al inicio</span>
+                </Link>
             </div>
         </div>
     )

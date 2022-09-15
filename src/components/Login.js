@@ -57,6 +57,10 @@ export const Login = () => {
                     <Link to="/auth/register">
                         <span>Si no tienes una cuenta, puedes crearte una</span>
                     </Link>
+
+                    <Link to="/">
+                        <span>Volver al inicio</span>
+                    </Link>
                 </div>
                 
             </div>

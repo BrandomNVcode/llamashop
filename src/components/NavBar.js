@@ -3,6 +3,8 @@ import "./css/navbar.css";
 
 import { useSelector, useDispatch } from 'react-redux';
 
+import { Link, useNavigate } from "react-router-dom";
+
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Badge } from '@mui/material';
@@ -12,6 +14,9 @@ import { startLogout } from '../redux/features/auth/authSlice';
 
 
 export const NavBar = () => {
+
+
+    const navigate = useNavigate();
 
     const dispatch = useDispatch();
 
@@ -31,6 +36,7 @@ export const NavBar = () => {
 
     const handleLogout = () => {
         dispatch(startLogout());
+        navigate("/");
     }
 
 
@@ -45,7 +51,7 @@ export const NavBar = () => {
                     </div>
                 </div>
                 <div className="center">
-                    <h1 className="logo">LLAMAshop.</h1>
+                    <h1 className="logo" onClick={() => navigate("/") }>LLAMAshop.</h1>
                 </div>
                 <div className="right">
 
@@ -53,8 +59,12 @@ export const NavBar = () => {
                         !isAuth &&
                         <div>
                             <ul className='nav-list-items'>
-                                <li className="menu-items">Register</li>
-                                <li className="menu-items">Login</li>
+                                <li className="menu-items">
+                                    <Link to='/auth/login'>Login</Link>
+                                </li>
+                                <li className="menu-items">
+                                    <Link to='/auth/register'>Register</Link>
+                                </li>
                             </ul>
                         </div>
                     }
@@ -89,8 +99,12 @@ export const NavBar = () => {
             {
                 !isAuth &&
                 <ul className="nav-list-items-desplegable nav-list-click-0" id="desplegable">
-                    <li>Register</li>
-                    <li>Login</li>
+                    <li>
+                        <Link to='/auth/login'>Login</Link>
+                    </li>
+                    <li>
+                        <Link to='/auth/register'>Register</Link>
+                    </li>    
                 </ul>
             }
         </nav>
