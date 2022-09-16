@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
 import "./css/info-product.css";
 
+import { useDispatch, useSelector } from 'react-redux';
+
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { addProductToCart } from '../redux/features/cart/cartSlice';
 
 
 
 export const InfoProduct = ({product}) => {
 
+
+    const dispatch = useDispatch();
+    const { products } = useSelector(state => state.cart);
+    const { isAuth } = useSelector(state => state.auth);
 
     const [cantidad, setCantidad] = useState(1);
 
@@ -17,6 +24,11 @@ export const InfoProduct = ({product}) => {
 
     const handleClickMas = () => {
         setCantidad(cantidad + 1);
+    }
+
+    const handleAddToCart = () => {
+        product.cantidad = cantidad;
+        dispatch(addProductToCart(product));
     }
 
 
@@ -50,10 +62,25 @@ export const InfoProduct = ({product}) => {
                     </div>
                 </div>
 
-                <button className='comprar'>
-                    <span className='add-to-cart'>Agregar al Carrito</span>
-                    <ShoppingCartOutlinedIcon />
-                </button>
+                {
+                    isAuth && 
+                    products.some(prod => {
+                        if(prod !== null) {
+                            return prod.id === product.id
+                        }
+                        return false
+                    }) ?
+                    
+                    <button className='comprar' disabled>
+                        <span className='add-to-cart'>Agregado al Carrito</span>
+                        <ShoppingCartOutlinedIcon />
+                    </button>
+                    :
+                    <button className='comprar' onClick={handleAddToCart}>
+                        <span className='add-to-cart'>Agregar al Carrito</span>
+                        <ShoppingCartOutlinedIcon />
+                    </button>
+                }
             </div>
         </div>
     )

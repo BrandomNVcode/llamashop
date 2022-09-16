@@ -34,7 +34,7 @@ export const Register = () => {
                     <label htmlFor="contracenia">Contraceña</label>
                     <input type="password" name="contracenia" id="contracenia" value="test123" disabled className='input-box'/>
 
-                    <label htmlFor="confirmcontracenia">Confirmar Contraceña</label>
+                    <label htmlFor="confirmcontracenia">Confirmar Contraseña</label>
                     <input type="password" name="confirmcontracenia" id="confirmcontracenia" value="test123" disabled className='input-box'/>
 
                     <input type="submit" value="REGISTRARSE" className='btn-auth'/>

@@ -46,7 +46,7 @@ export const Login = () => {
                         <label htmlFor="correo">Correo</label>
                         <input type="email" name="correo" id="correo" value="usuario@demo.com" disabled className='input-box'/>
 
-                        <label htmlFor="contracenia">Contraceña</label>
+                        <label htmlFor="contracenia">Contraseña</label>
                         <input type="password" name="correo" id="contracenia" value="test123" disabled className='input-box'/>
 
                         <input type="submit" value="INICIAR SESIÓN" className='btn-auth'/>
