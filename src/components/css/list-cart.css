@@ -72,6 +72,10 @@
     .list-cart-title {
         font-size: 1.7rem;
     }
+    
+    .list-product-order {
+        min-height: 50px;
+    }
 }
 
 
@@ -85,12 +89,19 @@
     .list-cart-container {
         margin: 25px 100px;
     }
+
+    .list-product-order {
+        min-height: 200px;
+    }
 }
 
 
 @media (min-width: 1200px) {
     .list-cart-container {
         margin: 25px 20%;
+    }
+    .list-product-order {
+        min-height: 300px;
     }
 }
 

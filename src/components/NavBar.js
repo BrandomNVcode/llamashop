@@ -21,6 +21,8 @@ export const NavBar = () => {
     const dispatch = useDispatch();
 
     const { isAuth } = useSelector(state => state.auth);
+    const { num } = useSelector(state => state.cart);
+
 
 
     const handleMenuDrop = () => {
@@ -69,8 +71,8 @@ export const NavBar = () => {
                         </div>
                     }
 
-                    <div className="menu-items cart-svg">
-                        <Badge badgeContent={isAuth? 4 : 0} color="primary">
+                    <div className="menu-items cart-svg" onClick={() => navigate("/shop/cart")}>
+                        <Badge badgeContent={isAuth? num : 0} color="primary">
                             <ShoppingCartOutlinedIcon className='shop-cart'/>
                         </Badge>
                     </div>

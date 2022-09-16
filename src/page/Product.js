@@ -23,7 +23,7 @@ export const Product = () => {
             .then(resp => setProduct(resp))
             .catch(err => navigate("/"));
 
-    }, [setProduct]);
+    }, [setProduct, id, navigate]);
 
 
 

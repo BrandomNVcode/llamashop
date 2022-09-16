@@ -1,9 +1,5 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 
-import authReducer from "../features/auth/authSlice";
-import filterReducer from "../features/filter/filterSlice";
-import listenerMiddleware from '../listener/listenerMiddleware';
-
 import {
   persistReducer,
   FLUSH,
@@ -16,10 +12,19 @@ import {
 import storage from 'redux-persist/lib/storage';
 
 
+import authReducer from "../features/auth/authSlice";
+import filterReducer from "../features/filter/filterSlice";
+import cartReducer from "../features/cart/cartSlice";
+
+import listenerMiddleware from '../listener/listenerMiddleware';
+
+
+
 
 const rootReducer = combineReducers({
     auth: authReducer,
     filter: filterReducer,
+    cart: cartReducer,
 });
 
 

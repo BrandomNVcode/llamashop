@@ -9,6 +9,10 @@
 
 .product-order-content-img {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .product-order-img {
@@ -59,6 +63,7 @@
 .order-cantidad {
     display: flex;
     align-items: baseline;
+    margin-top: 20px;
 }
 
 .operador-order {
@@ -88,6 +93,21 @@
     align-items: flex-end;
 }
 
+
+.list-cart-pagar {
+    margin-top: 30px;
+}
+
+.btn-pagar {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: #c3d570;
+    font-size: 1.2rem;
+    letter-spacing: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 
 /*---*/
@@ -119,7 +139,7 @@
     }
 
     .product-order-img {
-        width: 70%;
+        width: 55%;
     }
     
     .product-order-summary {
@@ -136,7 +156,6 @@
 
     .product-order-price {
         font-size: 1.7rem;
-        margin-right: 50px;
         margin-bottom: 20px;
     }
 
